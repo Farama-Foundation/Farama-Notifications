@@ -20,4 +20,5 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Check notifications
       run: |
+        pip3 install .
         python3 tests/ci-test.py

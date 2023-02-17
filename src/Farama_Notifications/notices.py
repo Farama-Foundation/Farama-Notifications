@@ -3,4 +3,4 @@ notifications = dict()
 
 # Example notification for project/version
 notifications["project_name"] = dict()
-notifications["project_name"]["version_number"] = "Notification message."
+# notifications["project_name"]["version_number"] = "Notification message."

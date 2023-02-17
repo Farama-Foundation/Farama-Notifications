@@ -1,4 +1,4 @@
-from ..Farama_Notifications.notifications import notifications
+from Farama_Notifications.notifications import notifications
 
 if __name__ == "__main__":
     assert isinstance(

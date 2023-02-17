@@ -1,5 +1,6 @@
 # notifications are a dict of dicts
 notifications = dict()
-notifications["gymnasium"] = dict()
 
-notifications["gymnasium"]["69.420"] = "This version does not exist."
+# Example notification for project/version
+notifications["project_name"] = dict()
+notifications["project_name"]["version_number"] = "Notification message."

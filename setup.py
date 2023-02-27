@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="Farama-Notifications",
-    version="0.0.2",
+    version="0.0.4",
     author="Jordan Terry",
     author_email="Jkterry@farama.org",
     description="Notifications for all Farama Foundation maintained libraries.",
@@ -17,5 +17,5 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    packages=setuptools.find_packages(),
+    packages=["farama_notifications"],
 )

@@ -13,4 +13,4 @@ if __name__ == "__main__":
         for version in notifications[package]:
             assert isinstance(
                 notifications[package][version], str
-            ), f"notifications for each package-version combindation must be a string, got {type(notifications[package][version])}."
+            ), f"notifications for each package-version combination must be a string, got {type(notifications[package][version])}."

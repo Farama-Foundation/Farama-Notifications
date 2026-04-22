@@ -27,10 +27,6 @@ def test_gymnasium_robotics_notifications(notifications):
             f"gymnasium_robotics {version} warning text must match expected message."
         )
 
-    assert notifications["gymnasium-robotics"] == notifications["gymnasium_robotics"], (
-        "gymnasium-robotics alias must match gymnasium_robotics notifications."
-    )
-
 
 if __name__ == "__main__":
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))

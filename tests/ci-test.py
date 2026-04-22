@@ -15,14 +15,7 @@ def test_gymnasium_robotics_notifications(notifications):
         "1.4.1",
         "1.4.2",
     }
-    expected_message = (
-        "The AdroitHandRelocateDense-v1, AdroitHandHammerDense-v1, "
-        "AdroitHandDoorDense-v1 environments versions have bug and should be used "
-        "for reproducibility, use gymansium-robotics==1.2.0 if you want to test "
-        "those environments or use version 2 of the environments with "
-        "gymansium-robotics>=1.4.3, see "
-        "https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/220 for more details"
-    )
+    expected_message = "AdroitHandRelocateDense-v1, AdroitHandHammerDense-v1, AdroitHandDoorDense-v1 environment's reward functions were updated in v1.2.1 without an environment version update. Therefore, use gymnasium-robotics==1.2.0 for v1 reproducibility or use v2 in gymnasium-robotics>=1.4.3. See https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/220 for more details"
 
     assert "gymnasium_robotics" in notifications, "gymnasium_robotics notifications must be present."
     assert set(notifications["gymnasium_robotics"]) == expected_versions, (
@@ -56,6 +49,6 @@ if __name__ == "__main__":
         for version in notifications[package]:
             assert isinstance(
                 notifications[package][version], str
-            ), f"notifications for each package-version combindation must be a string, got {type(notifications[package][version])}."
+            ), f"notifications for each package-version combination must be a string, got {type(notifications[package][version])}."
 
     test_gymnasium_robotics_notifications(notifications)
